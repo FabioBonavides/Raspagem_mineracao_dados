@@ -13,12 +13,12 @@ book = openpyxl.load_workbook('nome do arquivo.xlsx')
 book.create_sheet('nome da planilha')
 processos_page = book['nome da planilha']
 
-Dentro da função run, o navegador Chromium é inicializado usando playwright.chromium.launch(headless=False), 
-o que significa que o navegador será visível durante a execução.
+# Dentro da função run, o navegador Chromium é inicializado usando playwright.chromium.launch(headless=False), 
+# o que significa que o navegador será visível durante a execução.
 
-Um novo contexto é criado usando browser.new_context().
+# Um novo contexto é criado usando browser.new_context().
 
-Uma nova página é aberta dentro do contexto usando context.new_page().
+# Uma nova página é aberta dentro do contexto usando context.new_page().
 
 def run(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=False)
