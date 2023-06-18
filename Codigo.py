@@ -79,7 +79,7 @@ def run(playwright: Playwright) -> None:
                 elif x == x:             
                     aa = page.locator('Xpath').nth(i).text_content().strip()
                     bb = page.locator('Xpath').nth(i).text_content().strip()   
-                    cc = page.locator(f'//html/body/table/tbody/tr[{n}]/td[1]/span[3]').nth(i).text_content().strip()                                   
+                    cc = page.locator('Xpath').nth(i).text_content().strip()                                   
                     processos_page.append([aa, bb, cc])                    
                     print(f'projeto nº: {aa}')                    
                     x += 1
